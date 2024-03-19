@@ -9,14 +9,26 @@ import SwiftUI
 import Kingfisher
 
 
-
 struct KingFisher: View {
+    
+    let url: String
+    var contentMode: SwiftUI.ContentMode = .fill
+    
     var body: some View {
-        KFImage(URL(string: "https://picsum.photos/seed/picsum/200/300"))
+        KFImage(URL(string: url))
             .placeholder { _ in
                 ProgressView()
             }
-        
+            .onSuccess { result in
+                
+            }
+            .onFailure { error in
+                
+            }
+//            .lowDataModeSource(<#T##source: Source?##Source?#>)
+            .onProgress { receivedSize, totalSize in
+                    // when dealing with large images
+            }
         
         
         /*
@@ -37,5 +49,5 @@ struct KingFisher: View {
 }
 
 #Preview {
-    KingFisher()
+    KingFisher(url: "https://picsum.photos/seed/picsum/200/300")
 }

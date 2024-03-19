@@ -9,14 +9,21 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 
+// app use case - makes it easy to replace the sdk in one point
 struct ImageLoader: View {
     
     let url: String
     var contentMode: ContentMode = .fill
     
     var body: some View {
-        SDWebImage(url: url, contentMode: contentMode)
-            .allowsHitTesting(false) // <-
+        VStack {
+            // sd web image
+            SDWebImage(url: url, contentMode: contentMode)
+                .allowsHitTesting(false) // <- removes the tap on the image
+            
+            // kingfisher
+            KingFisher(url: url, contentMode: .fill)
+        }
     }
 }
 #Preview {
