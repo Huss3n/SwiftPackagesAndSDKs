@@ -15,6 +15,7 @@
 		D76669352BA33171008E93E7 /* SDWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76669342BA33171008E93E7 /* SDWebImage.swift */; };
 		D76669382BA982C1008E93E7 /* KingFisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76669372BA982C1008E93E7 /* KingFisher.swift */; };
 		D766693B2BA982FB008E93E7 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D766693A2BA982FB008E93E7 /* ImageLoader.swift */; };
+		D766693E2BA984A5008E93E7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D766693D2BA984A5008E93E7 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D766693E2BA984A5008E93E7 /* Kingfisher in Frameworks */,
 				D76669302BA32BE5008E93E7 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +138,7 @@
 			name = SwiftPackages;
 			packageProductDependencies = (
 				D766692F2BA32BE5008E93E7 /* SDWebImageSwiftUI */,
+				D766693D2BA984A5008E93E7 /* Kingfisher */,
 			);
 			productName = SwiftPackages;
 			productReference = D766691D2BA329E6008E93E7 /* SwiftPackages.app */;
@@ -167,6 +170,7 @@
 			mainGroup = D76669142BA329E6008E93E7;
 			packageReferences = (
 				D766692E2BA32BE5008E93E7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				D766693C2BA984A5008E93E7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = D766691E2BA329E6008E93E7 /* Products */;
 			projectDirPath = "";
@@ -414,6 +418,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		D766693C2BA984A5008E93E7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -421,6 +433,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D766692E2BA32BE5008E93E7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		D766693D2BA984A5008E93E7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D766693C2BA984A5008E93E7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
