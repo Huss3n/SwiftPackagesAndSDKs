@@ -6,13 +6,19 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
+
 
 struct ImageLoader: View {
+    
+    let url: String
+    var contentMode: ContentMode = .fill
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        SDWebImage(url: url, contentMode: contentMode)
+            .allowsHitTesting(false) // <-
     }
 }
-
 #Preview {
-    ImageLoader()
+    ImageLoader(url: "https://picsum.photos/seed/picsum/200/300", contentMode: .fit)
 }

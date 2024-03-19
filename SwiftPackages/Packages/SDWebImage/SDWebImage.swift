@@ -9,16 +9,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 
-struct ImageLoader: View {
-    
-    let url: String
-    var contentMode: ContentMode = .fill
-    
-    var body: some View {
-        SDWebImage(url: url, contentMode: contentMode)
-            .allowsHitTesting(false) // <- 
-    }
-}
+
 
 // MARK: Prefetch images - if you know a user will navigate to a screen and you want to fetch images in advance
 
@@ -39,7 +30,7 @@ final class ImagePrefetcher {
 }
 
 // create one struct in code where it can only be accessd
-fileprivate struct SDWebImage: View { // <- file private means this struct can only be accessed in one place
+ struct SDWebImage: View { // <- file private means this struct can only be accessed in one place
     
     let url: String
     var contentMode: ContentMode = .fill
@@ -81,19 +72,8 @@ fileprivate struct SDWebImage: View { // <- file private means this struct can o
 }
 
 
-// use case scenario
-struct UseWebImage: View {
-    var body: some View {
-        ImageLoader(url: "https://picsum.photos/seed/picsum/200/300", contentMode: .fit)
-            .onAppear(
-//                ImagePrefetcher.shared.startPrefetching(urls: [URL])
-            )
-    }
-}
-
-
 #Preview {
-    UseWebImage()
+    SDWebImage(url: "https://picsum.photos/seed/picsum/300/300")
 }
 
 
