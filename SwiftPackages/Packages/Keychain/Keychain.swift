@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import KeychainSwift
 
 // keychain is like user defaults and app storage
 // it is used to store and persist data between app sessions
@@ -16,8 +16,20 @@ import SwiftUI
 // keychain also persists data across devices 
 
 struct Keychain: View {
+    @State private var password: String = ""
+    let passwordKey = "user_password"
+    
     var body: some View {
-        Text("Hello world")
+        Button(password.isEmpty ? "No password" : password) {
+            let newPassword = "GreatPassword"
+            KeychainSwift().set(newPassword, forKey: passwordKey)
+            password = newPassword
+        }
+        .buttonStyle(.borderedProminent)
+        .buttonBorderShape(.capsule)
+        .onAppear {
+            password = KeychainSwift().get(passwordKey) ?? ""
+        }
     }
 }
 
