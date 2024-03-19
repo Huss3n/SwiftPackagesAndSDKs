@@ -16,6 +16,8 @@
 		D76669382BA982C1008E93E7 /* KingFisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76669372BA982C1008E93E7 /* KingFisher.swift */; };
 		D766693B2BA982FB008E93E7 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D766693A2BA982FB008E93E7 /* ImageLoader.swift */; };
 		D766693E2BA984A5008E93E7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D766693D2BA984A5008E93E7 /* Kingfisher */; };
+		D76669402BA989AA008E93E7 /* PrefetchingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D766693F2BA989AA008E93E7 /* PrefetchingImage.swift */; };
+		D76669422BA989E5008E93E7 /* PrefetcherKF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76669412BA989E5008E93E7 /* PrefetcherKF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		D76669342BA33171008E93E7 /* SDWebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWebImage.swift; sourceTree = "<group>"; };
 		D76669372BA982C1008E93E7 /* KingFisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingFisher.swift; sourceTree = "<group>"; };
 		D766693A2BA982FB008E93E7 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		D766693F2BA989AA008E93E7 /* PrefetchingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchingImage.swift; sourceTree = "<group>"; };
+		D76669412BA989E5008E93E7 /* PrefetcherKF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetcherKF.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				D76669342BA33171008E93E7 /* SDWebImage.swift */,
+				D766693F2BA989AA008E93E7 /* PrefetchingImage.swift */,
 			);
 			path = SDWebImage;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				D76669372BA982C1008E93E7 /* KingFisher.swift */,
+				D76669412BA989E5008E93E7 /* PrefetcherKF.swift */,
 			);
 			path = KingFisher;
 			sourceTree = "<group>";
@@ -198,9 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76669422BA989E5008E93E7 /* PrefetcherKF.swift in Sources */,
 				D76669232BA329E6008E93E7 /* ContentView.swift in Sources */,
 				D76669382BA982C1008E93E7 /* KingFisher.swift in Sources */,
 				D766693B2BA982FB008E93E7 /* ImageLoader.swift in Sources */,
+				D76669402BA989AA008E93E7 /* PrefetchingImage.swift in Sources */,
 				D76669212BA329E6008E93E7 /* SwiftPackagesApp.swift in Sources */,
 				D76669352BA33171008E93E7 /* SDWebImage.swift in Sources */,
 			);

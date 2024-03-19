@@ -8,27 +8,6 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-
-
-
-// MARK: Prefetch images - if you know a user will navigate to a screen and you want to fetch images in advance
-
-final class ImagePrefetcher {
-    static let shared = ImagePrefetcher()
-    
-    let prefetcher = SDWebImagePrefetcher()
-    
-    private init() { }
-    
-    func startPrefetching(urls: [URL]) {
-        prefetcher.prefetchURLs(urls)
-    }
-    
-    func stopPrefetching() {
-        prefetcher.cancelPrefetching()
-    }
-}
-
 // create one struct in code where it can only be accessd
  struct SDWebImage: View { // <- file private means this struct can only be accessed in one place
     
