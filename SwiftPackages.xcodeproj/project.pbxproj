@@ -69,6 +69,7 @@
 		D766691F2BA329E6008E93E7 /* SwiftPackages */ = {
 			isa = PBXGroup;
 			children = (
+				D79330722BAC3C2900607207 /* SwiftfulRouting */,
 				D76669312BA32C72008E93E7 /* App */,
 				D76669392BA982E3008E93E7 /* ImageLoader */,
 				D76669322BA32C77008E93E7 /* Packages */,
@@ -137,6 +138,13 @@
 				D76669472BA98DCD008E93E7 /* Keychain.swift */,
 			);
 			path = Keychain;
+			sourceTree = "<group>";
+		};
+		D79330722BAC3C2900607207 /* SwiftfulRouting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftfulRouting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

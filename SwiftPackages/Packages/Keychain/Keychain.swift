@@ -15,6 +15,8 @@ import KeychainSwift
 // keychain persists between installs so if the apps deleted the data will remain in keychain  and used in the next install
 // keychain also persists data across devices 
 
+// adding access control using the withAccess modifier
+
 struct Keychain: View {
     @State private var password: String = ""
     let passwordKey = "user_password"
