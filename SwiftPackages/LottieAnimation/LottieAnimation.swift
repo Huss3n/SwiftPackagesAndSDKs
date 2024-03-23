@@ -11,11 +11,33 @@ import Lottie
 
 
 struct LottieAnimation: View {
+    @State private var showSheet: Bool = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            
+            LottieView(animation: .named("card"))
+                .configure({ lottieView in
+                    lottieView.contentMode = .center
+//                    lottieView.animationSpeed = .infinity
+                    
+                })
+                .playbackMode(.playing(.toProgress(1, loopMode: .repeatBackwards(4))))
+                .animationDidFinish { completed in
+                    // whats do happen after a successful animation
+                    if completed {
+                        showSheet = true
+                    }
+                }
+
+        }
+        .sheet(isPresented: $showSheet, content: {
+            Text("Animation completed")
+        })
     }
 }
 
 #Preview {
     LottieAnimation()
 }
+
+
