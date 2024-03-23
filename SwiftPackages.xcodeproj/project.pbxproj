@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D740E2032BAEC68D00AF9F19 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D740E2022BAEC68D00AF9F19 /* Lottie */; };
 		D740E2062BAEC6C100AF9F19 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D740E2052BAEC6C100AF9F19 /* LottieAnimation.swift */; };
+		D740E2082BAECA0F00AF9F19 /* card.json in Resources */ = {isa = PBXBuildFile; fileRef = D740E2072BAECA0E00AF9F19 /* card.json */; };
 		D76669212BA329E6008E93E7 /* SwiftPackagesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76669202BA329E6008E93E7 /* SwiftPackagesApp.swift */; };
 		D76669232BA329E6008E93E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76669222BA329E6008E93E7 /* ContentView.swift */; };
 		D76669252BA329E9008E93E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76669242BA329E9008E93E7 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		D740E2052BAEC6C100AF9F19 /* LottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
+		D740E2072BAECA0E00AF9F19 /* card.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = card.json; sourceTree = "<group>"; };
 		D766691D2BA329E6008E93E7 /* SwiftPackages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPackages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76669202BA329E6008E93E7 /* SwiftPackagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPackagesApp.swift; sourceTree = "<group>"; };
 		D76669222BA329E6008E93E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				D76669322BA32C77008E93E7 /* Packages */,
 				D79330722BAC3C2900607207 /* SwiftfulRouting */,
 				D76669242BA329E9008E93E7 /* Assets.xcassets */,
+				D740E2072BAECA0E00AF9F19 /* card.json */,
 				D76669262BA329E9008E93E7 /* Preview Content */,
 			);
 			path = SwiftPackages;
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76669282BA329E9008E93E7 /* Preview Assets.xcassets in Resources */,
+				D740E2082BAECA0F00AF9F19 /* card.json in Resources */,
 				D76669252BA329E9008E93E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
